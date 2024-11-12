@@ -36,6 +36,7 @@ function App() {
         </div>
               <div className='flex justify start  text-blue-400'> <button className='bg-white'>Forgot Password?</button></div>
                <div><p>Don't Have an account?  <button className='bg-white text-blue-400'>SignUp</button></p></div>
+                <p className='text-bold text-blue-500'> thank yo for trusting us</p>
 
              </div> 
             
