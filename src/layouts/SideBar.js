@@ -13,7 +13,6 @@ import { HiPuzzlePiece } from 'react-icons/hi2';
 import { useLocation } from 'react-router-dom';
 import mylogo from '../images/mylogo.png';
 import { Tooltip } from 'antd';
-import Logo from '../components/Logo';
 
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(true); 
@@ -33,9 +32,10 @@ const Sidebar = () => {
              showSidebar ? 'w-full' : 'w-20'
               }`}
                   >
-            <Logo
-                 className={`transition-all duration-300 ease-in-out  w-20 ${
-                  showSidebar ? 'w-16' : 'w-8'
+            <img
+               src={mylogo} alt='myLogo'
+                 className={`transition-all duration-300 ease-in-out h-[80px] w-20 ${
+                  showSidebar ? 'w-28' : 'w-12'
                        } h auto object-contain`}
              />
 </div>

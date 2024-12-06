@@ -75,7 +75,7 @@ function Login() {
                   <div className='flex items-center'>
                   <span
                     type="button"
-                    className=" flex absolute top-1/2 right-3 transform -translate-y-1/2 text-black hover:text-gray-700 focus:outline-none"
+                    className=" flex absolute top-5 right-3 transform -translate-y-1 text-black hover:text-gray-700 focus:outline-none"
                     onClick={() => setShowPassword(!showPassword)}
                   >
                     {showPassword ? <FaEyeSlash /> : <FaEye />}
