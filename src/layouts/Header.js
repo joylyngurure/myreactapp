@@ -2,6 +2,9 @@ import React from 'react';
 import { Input } from 'antd';
 import {  SearchOutlined, BellOutlined } from '@ant-design/icons';
 import { FaUserCircle } from "react-icons/fa";
+import AdminDropdown from '../components/Dropdown';
+import   joyuserImage from "/home/joylyn/Documents/joy/testit/src/images/joyuser.png"
+import UserProfileButton from "../components/user.js"
 
 
 
@@ -25,12 +28,15 @@ const AppHeader = ({ showSidebar }) => {
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="flex items-center justify-center  h-10 w-10  rounded-full">
-            <FaUserCircle className="text-white text-xl" size='large'/>
+          <div >
+            <UserProfileButton/>
           </div>
           <div className="text-white">
             <strong className="block">Joylyn Gurure</strong>
             <span>IT Graduate Trainee</span>
+            <button className='inline-block ml-2 h-6 w-6'> 
+            <AdminDropdown className='inline-block m-2'/></button>
+            
           </div>
         </div>
       </div>
